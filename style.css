@@ -1,3 +1,98 @@
-.header{
-    color: blue;
+.header {
+  display: flex;
+  justify-content: space-between;
+  border-style: solid;
+  border-color: gray;
+  border-width: 2px;
+  opacity: 1;
+  margin-bottom: 10px;
+}
+.logo {
+  width: 200px;
+}
+.log-img {
+  width: 50px;
+}
+.nav-links ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  list-style-type: none;
+  cursor: pointer;
+}
+.nav-links li {
+  padding: 3px 10px;
+}
+.nav-links ul :hover {
+  color: red;
+  transition: 1;
+}
+.container {
+  width: 100%; /* Full width of the parent */
+  max-width: 1200px; /* Limits the width for larger screens */
+  margin: 0 auto; /* Centers the container horizontally */
+  padding: 16px; /* Adds space inside the container */
+  box-sizing: border-box; /* Ensures padding is included in width/height */
+}
+.restro-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.restaurant-card {
+  padding: 10px 10px 10px 10px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: gray;
+  margin:15px;
+  border-radius: 10px;
+}
+.restaurant-card p{
+    margin: 4px;
+}
+
+.restaurent-img {
+  width: 100%;
+  padding: auto;
+  margin-bottom: 5px;
+  height: 200px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+.restaurent-name-rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.restaurent-cusines-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.restaurent-location{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.opening-time-distance {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.text-truncate {
+  width: 20ch; /* Limits the text to approximately 30 characters */
+  overflow: hidden; /* Hides the overflowing content */
+  text-overflow: ellipsis; /* Adds "..." at the end of the truncated text */
+  white-space: nowrap; /* Prevents the text from wrapping to the next line */
+}
+.rating{
+    color: white;
+    padding: 1px;
+    border-style: none;
+    border-radius: 4px;
+}
+.time{
+    color: rgb(171, 0, 13);
+
 }
